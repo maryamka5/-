@@ -1,0 +1,70 @@
+C
+#include <stdio.h>
+
+int main() {
+  double a, b, c, e, f, g, h;
+  printf("Введите a: ");
+  scanf("%lf", &a);
+  printf("Введите b: ");
+  scanf("%lf", &b);
+  printf("Введите c: ");
+  scanf("%lf", &c);
+  printf("Введите e: ");
+  scanf("%lf", &e);
+  printf("Введите f: ");
+  scanf("%lf", &f);
+  printf("Введите g: ");
+  scanf("%lf", &g);
+  printf("Введите h: ");
+  scanf("%lf", &h);
+  double f1 = (a * a * a + g + b) / (c * (e * f - 3));
+  printf("Значение функции f1: %lf\n", f1);
+  double f2 = (a * a * a + g + b) / (c * (e * f - 3) * h);
+  printf("Значение функции f2: %lf\n", f2);
+  return 0;
+}
+
+C++
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  double a, b, c, e, f, g, h;
+  cout << "Введите a: ";
+  cin >> a;
+  cout << "Введите b: ";
+  cin >> b;
+  cout << "Введите c: ";
+  cin >> c;
+  cout << "Введите e: ";
+  cin >> e;
+  cout << "Введите f: ";
+  cin >> f;
+  cout << "Введите g: ";
+  cin >> g;
+  cout << "Введите h: ";
+  cin >> h;
+  double f1 = (a * a * a + g + b) / (c * (e * f - 3));
+  cout << "Значение функции f1: " << f1 << endl;
+  double f2 = (a * a * a + g + b) / (c * (e * f - 3) * h);
+  cout << "Значение функции f2: " << f2 << endl;
+  return 0;
+}
+
+python 
+
+a = float(input("Введите a: "))
+b = float(input("Введите b: "))
+c = float(input("Введите c: "))
+e = float(input("Введите e: "))
+f = float(input("Введите f: "))
+g = float(input("Введите g: "))
+h = float(input("Введите h: "))
+
+f1 = (a**3 + g + b) / (c * (e * f - 3))
+print("Значение функции f1:", f1)
+
+f2 = (a**3 + g + b) / (c * (e * f - 3) * h)
+print("Значение функции f2:", f2)
