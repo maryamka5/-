@@ -1,0 +1,105 @@
+C
+#include <stdio.h>
+#include <math.h>
+
+double f(double e, double f, double g, double h) {
+  return pow(e, 3) / (2 * b * c);
+}
+
+double b(double g, double h) {
+  return sqrt(pow(g - h, 2) - 3 * sin(h));
+}
+
+double c(double g, double h) {
+  return g - h;
+}
+
+int main() {
+  double e, f, g, h, x;
+  
+  // Ввод значений
+  printf("Введите e: ");
+  scanf("%lf", &e);
+  printf("Введите f: ");
+  scanf("%lf", &f);
+  printf("Введите g: ");
+  scanf("%lf", &g);
+  printf("Введите h: ");
+  scanf("%lf", &h);
+  printf("Введите x: ");
+  scanf("%lf", &x);
+
+  // Вычисление y
+  double y = f(e, f, g, h) * pow(x, 2) + b(g, h) * x + c(g, h);
+
+  // Вывод результата
+  printf("y = %lf\n", y);
+
+  return 0;
+}
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+double f(double e, double f, double g, double h) {
+  return pow(e, 3) / (2 * b * c);
+}
+
+double b(double g, double h) {
+  return sqrt(pow(g - h, 2) - 3 * sin(h));
+}
+
+double c(double g, double h) {
+  return g - h;
+}
+
+C++
+int main() {
+  double e, f, g, h, x;
+  
+  // Ввод значений
+  cout << "Введите e: ";
+  cin >> e;
+  cout << "Введите f: ";
+  cin >> f;
+  cout << "Введите g: ";
+  cin >> g;
+  cout << "Введите h: ";
+  cin >> h;
+  cout << "Введите x: ";
+  cin >> x;
+
+  // Вычисление y
+  double y = f(e, f, g, h) * pow(x, 2) + b(g, h) * x + c(g, h);
+
+  // Вывод результата
+  cout << "y = " << y << endl;
+
+  return 0;
+}
+
+PYTHON
+def f(e, f, g, h):
+  return pow(e, 3) / (2 * b(g, h) * c(g, h))
+
+def b(g, h):
+  return sqrt(pow(g - h, 2) - 3 * sin(h))
+
+def c(g, h):
+  return g - h
+
+def main():
+  e = float(input("Введите e: "))
+  f = float(input("Введите f: "))
+  g = float(input("Введите g: "))
+  h = float(input("Введите h: "))
+  x = float(input("Введите x: "))
+
+  y = f(e, f, g, h) * pow(x, 2) + b(g, h) * x + c(g, h)
+
+  print("y =", y)
+
+if name == "main":
+  main()
