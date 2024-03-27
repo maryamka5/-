@@ -1,0 +1,45 @@
+C++
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+  double x, y, z, q;
+
+  // Ввод значений x и y
+  cout << "Введите x: ";
+  cin >> x;
+  cout << "Введите y: ";
+  cin >> y;
+
+  // Вычисление Z
+  z = sqrt(x) / (x * x + 10);
+
+  // Вычисление q
+  q = 7.25 * sin(x) - abs(y);
+
+  // Вывод результатов
+  cout << "Z = " << z << endl;
+  cout << "q = " << q << endl;
+
+  return 0;
+}
+
+python
+import math
+
+def f1(x):
+  return math.sqrt(x) / (x**2 + 10)
+
+def f2(x, y):
+  return 7.25 * math.sin(x) - abs(y)
+
+x = float(input("Введите x: "))
+y = float(input("Введите y: "))
+
+z = f1(x)
+q = f2(x, y)
+
+print(f"Z = {z}")
+print(f"q = {q}")
