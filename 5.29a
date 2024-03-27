@@ -1,0 +1,32 @@
+C
+#include <stdio.h>
+
+int main() {
+  int sum = 0;
+  for (int i = 1; i <= 750; i++) {
+    sum += i;
+  }
+  printf("Среднее арифметическое: %lf\n", (double)sum / 750);
+  return 0;
+}
+
+c++
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  int sum = 0;
+  for (int i = 1; i <= 750; i++) {
+    sum += i;
+  }
+  cout << "Среднее арифметическое: " << (double)sum / 750 << endl;
+  return 0;
+}
+
+python 
+sum = 0
+for i in range(1, 751):
+  sum += i
+print("Среднее арифметическое:", sum / 750)
