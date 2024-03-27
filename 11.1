@@ -1,0 +1,32 @@
+C ++
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+  int a, b, c;
+  
+  // Ввод значений
+  cout << "Введите a: ";
+  cin >> a;
+  cout << "Введите b: ";
+  cin >> b;
+  cout << "Введите c: ";
+  cin >> c;
+
+  // Вычисление дискриминанта
+  double d = pow(b, 2) - 4 * a * c;
+
+  // Вывод результата
+  if (d > 0) {
+    cout << "Два действительных корня" << endl;
+  } else if (d == 0) {
+    cout << "Один действительный корень" << endl;
+  } else {
+    cout << "Два комплексных корня" << endl;
+  }
+
+  return 0;
+}
