@@ -30,3 +30,55 @@ int main() {
 
   return 0;
 }
+
+C
+
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+  int a, b, c;
+  
+  // Ввод значений
+  printf("Введите a: ");
+  scanf("%d", &a);
+  printf("Введите b: ");
+  scanf("%d", &b);
+  printf("Введите c: ");
+  scanf("%d", &c);
+
+  // Вычисление дискриминанта
+  double d = pow(b, 2) - 4 * a * c;
+
+  // Вывод результата
+  if (d > 0) {
+    printf("Два действительных корня\n");
+  } else if (d == 0) {
+    printf("Один действительный корень\n");
+  } else {
+    printf("Два комплексных корня\n");
+  }
+
+  return 0;
+}
+
+PYTHON
+def main():
+  a = int(input("Введите a: "))
+  b = int(input("Введите b: "))
+  c = int(input("Введите c: "))
+
+  # Вычисление дискриминанта
+  d = pow(b, 2) - 4 * a * c
+
+  # Вывод результата
+  if d > 0:
+    print("Два действительных корня")
+  elif d == 0:
+    print("Один действительный корень")
+  else:
+    print("Два комплексных корня")
+
+if name == "main":
+  main()
