@@ -1,0 +1,61 @@
+C++
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+  int n;
+  cout << "Введите n: ";
+  cin >> n;
+
+  int a[n];
+  for (int i = 0; i < n; i++) {
+    cin >> a[i];
+  }
+
+  int sum = 0;
+  for (int i = 0; i < n; i++) {
+    sum += a[i];
+  }
+
+  cout << "Сумма элементов массива: " << sum << endl;
+
+  return 0;
+}
+
+Python
+n = int(input("Введите n: "))
+
+a = []
+for i in range(n):
+  a.append(int(input()))
+
+sum = 0
+for i in range(n):
+  sum += a[i]
+
+print("Сумма элементов массива:", sum)
+
+C
+#include <stdio.h>
+
+int main() {
+  int n;
+  printf("Введите n: ");
+  scanf("%d", &n);
+
+  int a[n];
+  for (int i = 0; i < n; i++) {
+    scanf("%d", &a[i]);
+  }
+
+  int sum = 0;
+  for (int i = 0; i < n; i++) {
+    sum += a[i];
+  }
+
+  printf("Сумма элементов массива: %d\n", sum);
+
+  return 0;
+}
