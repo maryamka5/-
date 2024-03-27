@@ -1,0 +1,40 @@
+c (5.29 b)
+
+#include <stdio.h>
+
+int main() {
+  int b, sum = 0;
+  printf("Введите b: ");
+  scanf("%d", &b);
+  for (int i = 150; i <= b; i++) {
+    sum += i;
+  }
+  printf("Среднее арифметическое: %lf\n", (double)sum / (b - 149));
+  return 0;
+}
+
+c++
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  int b, sum = 0;
+  cout << "Введите b: ";
+  cin >> b;
+  for (int i = 150; i <= b; i++) {
+    sum += i;
+  }
+  cout << "Среднее арифметическое: " << (double)sum / (b - 149) << endl;
+  return 0;
+}
+
+python 
+
+b = int(input("Введите b: "))
+sum = 0
+for i in range(150, b + 1):
+  sum += i
+print("Среднее арифметическое:", sum / (b - 149))
+
