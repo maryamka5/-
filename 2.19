@@ -1,0 +1,51 @@
+C++
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+  double a, b;
+  cout << "Введите a: ";
+  cin >> a;
+  cout << "Введите b: ";
+  cin >> b;
+
+  double u = sqrt(a * a + 25) / (sqrt(b) + a + b);
+  double y = (abs(a) + 2 * sin(b)) / (5.5 * a);
+
+  cout << "u = " << u << endl;
+  cout << "y = " << y << endl;
+
+  return 0;
+}
+
+PYTHON
+a = float(input("Введите a: "))
+b = float(input("Введите b: "))
+
+u = math.sqrt(a**2 + 25) / (math.sqrt(b) + a + b)
+y = (abs(a) + 2 * math.sin(b)) / (5.5 * a)
+
+print("u =", u)
+print("y =", y)
+
+C
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+  double a, b;
+  printf("Введите a: ");
+  scanf("%lf", &a);
+  printf("Введите b: ");
+  scanf("%lf", &b);
+
+  double u = sqrt(a * a + 25) / (sqrt(b) + a + b);
+  double y = (fabs(a) + 2 * sin(b)) / (5.5 * a);
+
+  printf("u = %lf\n", u);
+  printf("y = %lf\n", y);
+
+  return 0;
+}
