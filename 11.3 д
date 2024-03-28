@@ -1,0 +1,57 @@
+C++
+#include <iostream>
+#include <random>
+
+int main() {
+  std::random_device rd;
+  std::mt19937 gen(rd());
+  std::uniform_int_distribution<int> dist(0, 10);
+
+  int arr[15];
+  for (int i = 0; i < 15; ++i) {
+    arr[i] = dist(gen);
+  }
+
+  for (int i = 0; i < 15; ++i) {
+    std::cout << arr[i] << " ";
+  }
+
+  std::cout << std::endl;
+
+  return 0;
+}
+
+
+Python
+import random
+
+def generate_random_array():
+  arr = []
+  for _ in range(15):
+    arr.append(random.randint(0, 10))
+  return arr
+
+arr = generate_random_array()
+print(*arr)
+
+
+C
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+  srand(time(NULL));
+
+  int arr[15];
+  for (int i = 0; i < 15; ++i) {
+    arr[i] = rand() % 11;
+  }
+
+  for (int i = 0; i < 15; ++i) {
+    printf("%d ", arr[i]);
+  }
+
+  printf("\n");
+
+  return 0;
+}
