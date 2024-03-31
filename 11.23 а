@@ -1,0 +1,69 @@
+С 
+#include <stdio.h>
+
+int main() {
+  int n, i;
+  scanf("%d", &n);
+  int a[n];
+  for (i = 0; i < n; i++) {
+    scanf("%d", &a[i]);
+  }
+  printf("a) ");
+  for (i = 0; i < n; i++) {
+    if (a[i] % 2 == 0) {
+      printf("%d ", a[i]);
+    }
+  }
+  printf("\nb) ");
+  for (i = 0; i < n; i++) {
+    if (a[i] % 10 == 0) {
+      printf("%d ", a[i]);
+    }
+  }
+  printf("\n");
+  return 0;
+}
+
+C++
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  int n, i;
+  cin >> n;
+  int a[n];
+  for (i = 0; i < n; i++) {
+    cin >> a[i];
+  }
+  cout << "a) ";
+  for (i = 0; i < n; i++) {
+    if (a[i] % 2 == 0) {
+      cout << a[i] << " ";
+    }
+  }
+  cout << endl << "b) ";
+  for (i = 0; i < n; i++) {
+    if (a[i] % 10 == 0) {
+      cout << a[i] << " ";
+    }
+  }
+  cout << endl;
+  return 0;
+}
+
+Python
+n = int(input())
+a = list(map(int, input().split()))
+
+print("a) ", end="")
+for i in range(n):
+  if a[i] % 2 == 0:
+    print(a[i], end=" ")
+
+print("\nb) ", end="")
+for i in range(n):
+  if a[i] % 10 == 0:
+    print(a[i], end=" ")
+
+print()
