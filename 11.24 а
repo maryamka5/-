@@ -1,0 +1,62 @@
+C
+#include <stdio.h>
+
+int main() {
+  int n, i;
+  scanf("%d", &n);
+  int a[n];
+  int sum = 0, count = 0;
+  for (i = 0; i < n; i++) {
+    scanf("%d", &a[i]);
+    sum += a[i];
+    if (a[i] % 3 == 0) {
+      count++;
+    }
+  }
+  double avg = (double)sum / n;
+  printf("Сумма: %d\n", sum);
+  printf("Среднее арифметическое: %.2f\n", avg);
+  printf("Количество элементов, кратных 3: %d\n", count);
+  return 0;
+}
+
+C++
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  int n, i;
+  cin >> n;
+  int a[n];
+  int sum = 0, count = 0;
+  for (i = 0; i < n; i++) {
+    cin >> a[i];
+    sum += a[i];
+    if (a[i] % 3 == 0) {
+      count++;
+    }
+  }
+  double avg = (double)sum / n;
+  cout << "Сумма: " << sum << endl;
+  cout << "Среднее арифметическое: " << fixed << setprecision(2) << avg << endl;
+  cout << "Количество элементов, кратных 3: " << count << endl;
+  return 0;
+}
+
+Python
+n = int(input())
+a = list(map(int, input().split()))
+
+sum = 0
+count = 0
+for i in range(n):
+  sum += a[i]
+  if a[i] % 3 == 0:
+    count += 1
+
+avg = sum / n
+
+print("Сумма:", sum)
+print("Среднее арифметическое:", avg)
+print("Количество элементов, кратных 3:", count)
